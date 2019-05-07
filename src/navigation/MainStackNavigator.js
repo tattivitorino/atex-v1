@@ -6,15 +6,15 @@ import material from '../../native-base-theme/variables/material';
 import MainTabNavigator from './MainTabNavigator';
 
 const MainStackNavigator = createStackNavigator({
-    Tabs:{screen:AppTabsNavigator}
+    Tabs: { screen: MainTabNavigator }
 }, {
-    initialRouteName:'Tabs',
-    mode:'modal',
-    modalTransitionConfig,
-    defaultNavigationOptions:{
-        header:null,
-        headerMode:'screen'
-    }
-});
+        initialRouteName: 'Tabs',
+        mode: 'modal',
+        modalTransitionConfig,
+        defaultNavigationOptions: {
+            header: null,
+            headerMode: 'screen'
+        }
+    });
 
 export default MainStackNavigator;

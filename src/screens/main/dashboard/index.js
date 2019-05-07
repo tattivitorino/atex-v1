@@ -14,8 +14,6 @@ class Dashboard extends Component {
     let string;
     sha256('test').then(hash => {
       string = hash;
-      console.log(string);
-
     })
   }
 
